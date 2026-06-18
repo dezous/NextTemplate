@@ -1,0 +1,13 @@
+echo 'Linting and formatting staged files...'
+npx lint-staged || {
+  echo 'lint-staged failed. Fix ESLint/Prettier errors, stage changes and commit again.'
+  exit 1
+}
+
+echo 'Running TypeScript type check...'
+npm run type-check || {
+  echo 'Type check failed. Fix typing errors and commit again.'
+  exit 1
+}
+
+echo 'OK, commit allowed.'

@@ -1,0 +1,2 @@
+# Normalize line endings: always LF in the repo (matches Prettier endOfLine: lf)
+* text=auto eol=lf
