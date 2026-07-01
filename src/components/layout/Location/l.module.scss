@@ -1,0 +1,34 @@
+.location {
+  display: flex;
+  padding: 26px 0;
+  min-height: 330px;
+  box-sizing: content-box;
+}
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: url(/images/bgSectionTwo.webp) center / cover no-repeat;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 334px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--colorWhite);
+  > p {
+    font-size: 18px;
+  }
+}
+.title {
+  font-size: 34px;
+  margin-bottom: 22px;
+}
+.btn {
+  margin-bottom: 16px;
+}

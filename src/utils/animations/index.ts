@@ -1,0 +1,7 @@
+export { useFadeIn } from './fadeIn'
+export { useSlideIn } from './slideIn'
+export { useScaleIn } from './scaleIn'
+export { useStagger } from './stagger'
+export { useScrollAnimation } from './scrollAnimation'
+export { useScrollStagger } from './scrollStager'
+export type { AnimationOptions } from '@/types/animations'

@@ -1,0 +1,62 @@
+.accommodation {
+  height: 515px;
+}
+
+.container {
+  background: url('/images/bgSectionSix.webp') center / cover no-repeat;
+  width: 100%;
+  height: inherit;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+.box,
+.contentBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  height: 100%;
+  gap: 20px;
+  max-width: 334px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  flex: 1 1 auto;
+  font-size: 34px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--colorAccent);
+}
+
+.contentBottom {
+  gap: 44px;
+  text-align: center;
+  > p {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  .item {
+    flex: 1 1 150px;
+
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    span {
+      display: block;
+      color: var(--colorAccent);
+    }
+  }
+}

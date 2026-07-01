@@ -1,0 +1,33 @@
+.seeYouSoon {
+  min-height: 342px;
+  display: flex;
+}
+
+.container {
+  flex: 1;
+  background: url('/images/bgSectionSeven.webp') center / cover no-repeat;
+  width: 100%;
+  height: inherit;
+  padding-bottom: 40px;
+  padding-top: 98px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 365px;
+  width: 100%;
+  margin: 0 auto;
+  color: var(--colorWhite);
+  text-align: center;
+  p {
+    font-family: var(--fontSloopScriptPro);
+    font-size: 34px;
+  }
+}
+.title {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+

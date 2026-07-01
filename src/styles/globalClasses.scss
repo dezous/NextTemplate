@@ -1,0 +1,32 @@
+[class*='__container'] {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: var(--maxWidthContainer);
+}
+html,
+body {
+  scroll-behavior: smooth;
+  min-width: var(--minWidth);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fontSize);
+  line-height: var(--line-height);
+  font-family: var(--fontOranienbaum), sans-serif;
+  background-color: var(--colorAccent);
+  color: var(--colorText);
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+.overflow {
+  overflow: hidden;
+}

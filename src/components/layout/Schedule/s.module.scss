@@ -1,0 +1,72 @@
+.schedule {
+  min-height: 600px;
+  display: flex;
+}
+.container {
+  flex: 1;
+  background: url('/images/bgSectionOne.webp') center / cover no-repeat;
+  width: 100%;
+  padding-bottom: 120px;
+  padding-top: 54px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 292px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btn {
+  margin-bottom: 60px;
+  will-change: transform;
+  svg{
+    width: 100%;
+    height: 100%;
+
+  }
+}
+.text {
+  text-align: center;
+  margin-bottom: 64px;
+  text-transform: uppercase;
+}
+.title {
+  font-size: 30px;
+  color: var(--colorAccent);
+  margin-bottom: 12px;
+}
+.times {
+  > p {
+    display: grid;
+    gap: 4px;
+    text-align: center;
+    font-size: 18px;
+    span {
+      display: block;
+      font-size: 34px;
+    }
+  }
+}
+.dates {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 30px;
+  > div {
+    font-size: 58px;
+    color: var(--colorAccent);
+    &:not(:last-child) {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: -15px;
+        height: 100%;
+        width: 0.6px;
+        background-color: var(--colorAccent);
+      }
+    }
+  }
+}

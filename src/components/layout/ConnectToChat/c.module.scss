@@ -1,0 +1,39 @@
+.stayConected {
+  min-height: 600px;
+  display: flex;
+}
+
+.container {
+  flex: 1;
+  background: url('/images/bgSectionFour.webp') center / cover no-repeat;
+  width: 100%;
+  padding-bottom: 286px;
+  padding-top: 60px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  max-width: 306px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 50px;
+  font-family: var(--fontSloopScriptPro);
+  color: var(--colorAccent);
+  span {
+    font-family: var(--fontOranienbaum), sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+  }
+}
+.btn {
+  border-color: #665c2f;
+}

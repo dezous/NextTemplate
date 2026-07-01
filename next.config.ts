@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
 
-  // sassOptions: {
-  //   includePaths: ["app/_styles"],
-  // },
+  sassOptions: {
+    includePaths: ['src/styles'],
+  },
 
   images: {
     formats: ['image/avif', 'image/webp'],

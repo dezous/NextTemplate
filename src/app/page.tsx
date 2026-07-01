@@ -1,7 +1,9 @@
-export default function Home() {
+import Envelope from '@/components/layout/Envelope/Envelope'
+
+export default async function Home() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <main>
+      <Envelope />
+    </main>
   )
 }

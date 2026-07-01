@@ -1,0 +1,29 @@
+.loaderWrapper {
+  position: fixed;
+  inset: 0;
+  background: var(--bgMain);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transition: opacity 0.5s ease;
+}
+
+.loaderWrapper.fadeOut {
+  opacity: 0;
+}
+
+.loader {
+  width: 61px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}

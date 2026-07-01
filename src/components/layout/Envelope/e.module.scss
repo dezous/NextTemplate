@@ -1,0 +1,96 @@
+.envelope {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgMain);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 900px;
+  max-height: 900px;
+  width: 100vw;
+  height: inherit;
+  min-height: 400px;
+  overflow: hidden;
+  opacity: 1;
+  position: relative;
+}
+.hidden {
+  position: fixed;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+  z-index: -1;
+}
+.envelopeTop,
+.envelopeBottom {
+  position: relative;
+  width: 889.4px;
+  height: 486px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.envelopeTop {
+  top: calc(50% - 420px);
+}
+.envelopeBottom {
+  top: calc(50% - 550px);
+}
+.text {
+  max-width: 173px;
+  position: absolute;
+  bottom: 13.6vh;
+  left: calc(50%);
+  transform: translateX(-50%);
+  z-index: 20;
+  text-align: center;
+  color: var(--colorWhite);
+  text-transform: uppercase;
+}
+.stamp {
+  cursor: pointer;
+  width: 120px;
+  height: 125px;
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  z-index: 20;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.envelopeHidden {
+  opacity: 0;
+  transition:
+    opacity 2s ease-out,
+    transform 2s ease-out;
+}
+.envelopeHiddenBottom {
+  transform: translateY(300px);
+}
+.envelopeHiddenTop {
+  transform: translateY(-300px);
+}
+.p2Hidden {
+  opacity: 0;
+  transform: translateY(-300px);
+  transition:
+    opacity 2s ease-out,
+    transform 2s ease-out;
+}
+
+
+.mainContent {
+  opacity: 0;
+}
